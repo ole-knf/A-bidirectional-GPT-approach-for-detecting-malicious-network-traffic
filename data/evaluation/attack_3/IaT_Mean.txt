@@ -1,0 +1,125 @@
+{
+    "tn": 2016177,
+    "fp": 1384,
+    "fn": 704081,
+    "tp": 1361,
+    "Accuracy": 0.740923899092289,
+    "Precision": 0.4958105646630237,
+    "Inverse-Precision": 0.7411712418454426,
+    "Recall": 0.0019292868868028838,
+    "Inverse-Recall": 0.9993140232191244,
+    "Fallout": 0.0006859767808755225,
+    "Missrate": 0.9980707131131971,
+    "Informedness": 0.0012433101059272644,
+    "Markedness": 0.23698180650846634,
+    "F0.1": 0.14027462849842132,
+    "F0.5": 0.009498591612206212,
+    "F1": 0.00384361757558385,
+    "F2": 0.002409264889203909,
+    "F10": 0.0019485039359252194,
+    "MCC": 0.01716513544813727,
+    "Jaccard-Index": 0.0019255092483864487,
+    "Jaccard-Distance": 0.9980744907516136,
+    "Detected-Scenarios": [
+        2,
+        5
+    ],
+    "Detected-Scenarios-Percent": 0.2857142857142857,
+    "Scenario-Recall": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+    },
+    "Penalty-Score": 1.1872358322143555,
+    "Detection-Delay": 7.005828857421875,
+    "TPA": 972,
+    "FPA": 1133,
+    "eTaR": 0.0741807667594774,
+    "eTaP": 0.439014580634374,
+    "eTaF0.1": 0.4186295095477489,
+    "eTaF0.5": 0.2213182804569096,
+    "eTaF1": 0.1269163423847457,
+    "eTaF2": 0.08896771574952433,
+    "eTaF10": 0.07479619049800512,
+    "BATADAL-TTD": 0.2641981155200346,
+    "BATADAL-CLF": 0.5006216550529636,
+    "BATADAL": 0.3824098852864991,
+    "NAB-score-default": -768.7593688408259,
+    "NAB-score-low-fp": -1565.97996096042,
+    "NAB-score-low-fn": -502.9824363700744,
+    "Affiliation-Precision": 0.6614277083785561,
+    "Affiliation-Recall": 0.34360228663768805,
+    "Affiliation-F0.1": 0.6554251784544234,
+    "Affiliation-F0.5": 0.5581686776475252,
+    "Affiliation-F1": 0.45226127413386197,
+    "Affiliation-F2": 0.38013427150255896,
+    "Affiliation-F10": 0.3452448118128434,
+    "_evaluation-config": {
+        "version": "v1.2.6",
+        "compresslevel": 9,
+        "input": "../reference data_ipal/IaT-Mean-attack_3.ipal.gz",
+        "output": "attack_3_IaT_Mean.txt",
+        "attacks": "../attack/attack_3.json",
+        "timed_dataset": true,
+        "alarm_gracetime": 0,
+        "fscore_beta": [
+            0.1,
+            0.5,
+            1,
+            2,
+            10
+        ],
+        "eTaPR_theta_p": 0.5,
+        "eTaPR_theta_r": 0.01,
+        "eTaPR_delta": 0.0,
+        "batadal_gamma": 0.5,
+        "nab_profiles": {
+            "default": {
+                "nab_atp": 1,
+                "nab_afp": -0.11,
+                "nab_afn": -1
+            },
+            "reward_low_fp": {
+                "nab_atp": 1,
+                "nab_afp": -0.22,
+                "nab_afn": -1
+            },
+            "reward_low_fn": {
+                "nab_atp": 1,
+                "nab_afp": -0.11,
+                "nab_afn": -2.0
+            }
+        },
+        "log": 30,
+        "logformat": "%(levelname)s:%(name)s: %(message)s",
+        "logfile": "-"
+    },
+    "_transcriber-config": {
+        "compresslevel": 9,
+        "pyshark_options": [
+            "-o",
+            "udp.check_checksum:TRUE",
+            "-o",
+            "tcp.check_checksum:TRUE",
+            "-o",
+            "mbtcp.tcp.port:502"
+        ],
+        "source": "raw/Network datatset/pcap/attack_3.pcap.gz",
+        "protocols": [
+            "modbus"
+        ],
+        "rules": null,
+        "crc": "and",
+        "timeout": 0.25,
+        "maliciousdefault": false,
+        "malicious": "attacks.json",
+        "ipalout": "-",
+        "log": 20,
+        "logformat": "%(levelname)s:%(name)s:%(message)s",
+        "logfile": null
+    }
+}
