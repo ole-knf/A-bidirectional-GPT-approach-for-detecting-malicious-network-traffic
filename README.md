@@ -73,4 +73,4 @@ After the IDS has processed the entire provided file, and the parameter 'overvie
 
 If a file for the attack meta data was provided, the plot will contain the attack intervals as grey areas. Additionally, the some metrics will be computed, specifically true/false positives and true/false negatives.
 
-Incase of the parameter 'ipal' being set, the ids will produce a ipal conform file, which can be evaluated by the tool IPAL Evaluate.
+Incase of the parameter 'ipal' being set, the ids will produce a ipal conform file, which can be evaluated by the tool [IPAL Evaluate](https://github.com/fkie-cad/ipal_evaluate).
