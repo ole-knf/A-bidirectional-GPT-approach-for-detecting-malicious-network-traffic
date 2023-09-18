@@ -1,7 +1,9 @@
 # GPT-Network-IDS-Project
 
 ## Disclaimer
-This repository does not include the data on which the models were trained on and therefor were the base of the evaluation. The data in question can be found here: [Water Distribution Testbed](https://ieee-dataport.org/open-access/hardware-loop-water-distribution-testbed-wdt-dataset-cyber-physical-security-testing) 
+This repository does not include the data on which the models were trained on and therefor were the base of the evaluation. The data in question can be found here: [Water Distribution Testbed](https://ieee-dataport.org/open-access/hardware-loop-water-distribution-testbed-wdt-dataset-cyber-physical-security-testing).
+
+The IDS is centered around GPT models, which are based on the project [nanoGPT](https://github.com/karpathy/nanoGPT).
 
 ## Getting started
 
